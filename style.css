@@ -1,0 +1,16 @@
+.jumbotron {
+    background-image: url(https://openweathermap.org/themes/openweathermap/assets/img/new-history-forecast-bulk.png);
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: navy;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    color: navy;
+}
+
+
