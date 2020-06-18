@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+
+    <title>Basic Weather "App" for PROJECT</title>
+    
+</head>
+
+<body>
+  <!-- Welcome Jumbotron-->
+  <div class="jumbotron">
+    <h1 class="display-4">Weather Dash!</h1>
+    <p class="lead">Welcome to Weather Dash! Plan ahead with the weather in mind.</p>
+    <hr class="my-4">
+    <p>Enter city then hit the "Dash!" button. It's that simple!</p>
+  </div>
+
+  <!--Weather Form-->
+
+  <div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-10 col-md-8 col-lg-6">
+            <!-- Form -->
+            <form class="form-example" action="" method="post">
+            
+                <!-- Input fields -->
+                <div class="form-group">
+                    <label for="input">City</label>
+                    <input type="text" class="form-control" id="enter-city" placeholder="Enter City Here" name="city">
+                </div>
+                <button type="submit" id="dash-button" class="btn btn-primary btn-customized">Dash!</button>
+            </form>
+            <!-- Form end -->
+        </div>
+    </div>
+</div>
+ 
+<!--Divs to store API response on HTML page-->
+  <div class="city"></div>
+  <div class="temperature"></div>
+  <div class="humidity"></div>
+  <div class="wind-speed"></div>
+  <!-- <div class="uv-index"></div> -->
+      
+<!--Scripts-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
