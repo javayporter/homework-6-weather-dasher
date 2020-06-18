@@ -6,6 +6,9 @@ var cityEntered = document.querySelector("#enter-city");
 function getWeather() {
     var city = cityEntered.value.trim();
     var apiCall = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
+   
+    
+
 
 //AJAX Call
 
@@ -43,6 +46,7 @@ $.ajax({
 function getForecast() {
     var city = cityEntered.value.trim();
     var apiCall = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + apiKey;
+    
 
 //AJAX Call
 
@@ -72,25 +76,25 @@ $.ajax({
         $(".date1").text("Date: " + response.list[0].dt_txt);
 
         //Day 2
-        $(".city2").text(response.city.name + " TEST!");
+        $(".city2").text(response.city.name);
         $(".temperature2").text("Temperature: " + response.list[8].main.temp);
         $(".humidity2").text("Humidity: " + response.list[8].main.humidity);
         $(".date2").text("Date: " + response.list[8].dt_txt);
 
         //Day 3
-        $(".city3").text(response.city.name + " TEST!");
+        $(".city3").text(response.city.name);
         $(".temperature3").text("Temperature: " + response.list[16].main.temp);
         $(".humidity3").text("Humidity: " + response.list[16].main.humidity);
         $(".date3").text("Date: " + response.list[16].dt_txt);
 
         //Day 4
-        $(".city4").text(response.city.name + " TEST!");
+        $(".city4").text(response.city.name);
         $(".temperature4").text("Temperature: " + response.list[24].main.temp);
         $(".humidity4").text("Humidity: " + response.list[24].main.humidity);
         $(".date4").text("Date: " + response.list[24].dt_txt);
 
         //Day5
-        $(".city5").text(response.city.name + " TEST!");
+        $(".city5").text(response.city.name);
         $(".temperature5").text("Temperature: " + response.list[32].main.temp);
         $(".humidity5").text("Humidity: " + response.list[32].main.humidity);
         $(".date5").text("Date: " + response.list[32].dt_txt);
