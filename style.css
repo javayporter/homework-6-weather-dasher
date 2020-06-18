@@ -5,12 +5,15 @@
 
 h1 {
     font-family: 'Ubuntu', sans-serif;
-    color: navy;
+    color: black;
 }
 
 p {
     font-family: 'Ubuntu', sans-serif;
-    color: navy;
+    color: black;
 }
 
 
+.move {
+    margin-top: 50px;
+}
