@@ -17,3 +17,10 @@ p {
 .move {
     margin-top: 50px;
 }
+.left {
+    float: left;
+}
+
+.margin {
+    margin-left: 100px;
+}
