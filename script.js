@@ -6,6 +6,8 @@ var cityEntered = document.querySelector("#enter-city");
 function getWeather() {
     var city = cityEntered.value.trim();
     var apiCall = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
+    
+    
    
     
 
@@ -34,7 +36,7 @@ $.ajax({
         $(".city").text(response.name + " Weather Details");
         $(".wind-speed").text("Wind Speed: " + response.wind.speed);
         $(".humidity").text("Humidity: " + response.main.humidity);
-        $(".temperature").text("Temperature (K): " + response.main.temp);
+        $(".temperature").text("Temperature (K): " + (response.main.temp) );
         // $(".uv-index").text("Uv Index: " + response.main.uv)
 
     });
